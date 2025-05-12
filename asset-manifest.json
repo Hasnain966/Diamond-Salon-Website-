@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/saloon-site/static/css/main.f178f73e.css",
+    "main.js": "/saloon-site/static/js/main.1fa6aa1b.js",
+    "index.html": "/saloon-site/index.html",
+    "main.f178f73e.css.map": "/saloon-site/static/css/main.f178f73e.css.map",
+    "main.1fa6aa1b.js.map": "/saloon-site/static/js/main.1fa6aa1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f178f73e.css",
+    "static/js/main.1fa6aa1b.js"
+  ]
+}
