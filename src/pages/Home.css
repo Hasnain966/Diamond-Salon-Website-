@@ -1,0 +1,517 @@
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--light-color);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.luxury-heading {
+  color: #f8d568; /* Enhanced gold color for luxury feel */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Add these styles to your existing Home.css file */
+
+.animated-heading {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.heading-letter {
+  display: inline-block;
+  color: #f8d568; /* Luxury gold color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: Add a blinking cursor effect at the end */
+.animated-heading::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+  color: #f8d568;
+  opacity: 0;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Make the animation responsive */
+
+
+/* Services Preview Section */
+.services-preview {
+  background-color: var(--light-color);
+}
+
+.service-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.8rem;
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.service-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.service-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.service-link:hover::after {
+  width: 100%;
+}
+
+/* About Preview Section */
+.about-preview {
+  background-color: var(--bg-light);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  padding: 2rem;
+}
+
+.about-content h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: var(--light-color);
+  }
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-content {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-meta h4 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.testimonial-meta p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Promotions Section */
+.promotions {
+  background-color: var(--bg-light);
+}
+
+.promotion-card {
+  background-image: url("https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+
+.promotion-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+}
+
+.promotion-content {
+  position: relative;
+  padding: 3rem;
+  color: var(--light-color);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion-content h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.promotion-content h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.promotion-content p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Call to Action Section */
+.cta {
+  background-image: url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--light-color);
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cta-content {
+  position: relative;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.cta-content h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.cta-content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Updated styles for the animated heading */
+
+.animated-heading {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.5px;
+}
+
+.heading-letter {
+  display: inline-block;
+  color: #f8d568; /* Luxury gold color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+/* Remove the blinking cursor */
+.animated-heading::after {
+  display: none;
+}
+
+/* Make the animation responsive */
+@media screen and (max-width: 768px) {
+  .heading-letter {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading-letter {
+    font-size: 2rem;
+  }
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .promotion-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Fix footer overflow on mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content {
+    padding: 2rem 1rem;
+  }
+}
+
+/* General grid layouts */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--light-color);
+  border: 2px solid var(--light-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-dark);
+}
+

@@ -1,0 +1,325 @@
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    margin-top: 70px;
+  }
+  
+  .register-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .register-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form-container {
+    padding: 3rem;
+  }
+  
+  .register-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .register-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-header p {
+    color: var(--secondary-color);
+  }
+  
+  .register-error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .register-form {
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .password-strength {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .strength-meter {
+    flex: 1;
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+  
+  .strength-meter-fill {
+    height: 100%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .strength-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .terms-checkbox {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .terms-checkbox input {
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+    width: auto;
+  }
+  
+  .terms-checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9rem;
+  }
+  
+  .terms-link {
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  
+  .terms-link:hover {
+    text-decoration: underline;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .social-register {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .social-register p {
+    position: relative;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+  }
+  
+  .social-register p::before,
+  .social-register p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .social-register p::before {
+    left: 0;
+  }
+  
+  .social-register p::after {
+    right: 0;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .social-btn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .google {
+    color: #db4437;
+  }
+  
+  .facebook {
+    color: #4267b2;
+  }
+  
+  .register-footer {
+    text-align: center;
+  }
+  
+  .login-link {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  .register-benefits {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .benefits-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .benefits-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .benefits-list {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-icon {
+    margin-right: 1rem;
+    color: var(--dark-color);
+  }
+  
+  .testimonial {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .testimonial-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .testimonial-author span {
+    font-weight: 600;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 992px) {
+    .register-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .register-benefits {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .register-form-container {
+      padding: 2rem;
+    }
+  
+    .register-header h1 {
+      font-size: 2rem;
+    }
+  
+    .social-buttons {
+      flex-direction: column;
+    }
+  }
+  
